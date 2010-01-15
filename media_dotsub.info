@@ -1,0 +1,6 @@
+; $Id$
+name = Media: dotSUB
+description = Embedded Media Field provider for http://dotsub.com
+core = 6.x
+dependencies[] = emvideo
+package = Media
