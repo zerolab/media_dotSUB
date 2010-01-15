@@ -5,3 +5,9 @@
  *  @file
  *  Embedded Video Field provider for dotsub.com
  */
+
+function media_dotsub_emfield_providers($module, $provider = NULL) {
+  if ($module == 'emvideo') {      
+    return drupal_system_listing("$provider\.inc$", drupal_get_path('module', 'media_dotsub') ."/providers", 'name', 0);
+  }
+}
